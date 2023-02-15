@@ -83,7 +83,7 @@ a:hover {
 ----------------------------*/
 .cover {
 	height: 70%;
-	background-image: url("https://source.unsplash.com/category/buildings");
+	background-image: url("https://source.unsplash.com/category/food");
 	background-size: cover;
 	-o-background-size: cover;
 	-moz-background-size: cover;
@@ -199,8 +199,7 @@ a:hover {
 /*----------------------------
             SINGLE
 ----------------------------*/
-.single {
-}
+
 .single__copy {
 	max-width: 800px;
 	margin: auto;

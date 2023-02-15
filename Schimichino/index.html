@@ -9,6 +9,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preload" as="script" href="https://cdn.iubenda.com/cs/iubenda_cs.js"/>
+    <link rel="preload" as="script" href="https://cdn.iubenda.com/cs/tcf/stub-v2.js"/>
+    <script src="https://cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
+    <script>
+        (_iub=self._iub||[]).csConfiguration={
+            cookiePolicyId: 91214297,
+            siteId: 2988491,
+            localConsentDomain: 'secretchat.altervista.org',
+            timeoutLoadConfiguration: 30000,
+            lang: 'it',
+            enableTcf: true,
+            tcfVersion: 2,
+            tcfPurposes: {
+                "2": "consent_only",
+                "3": "consent_only",
+                "4": "consent_only",
+                "5": "consent_only",
+                "6": "consent_only",
+                "7": "consent_only",
+                "8": "consent_only",
+                "9": "consent_only",
+                "10": "consent_only"
+            },
+            invalidateConsentWithoutLog: true,
+            googleAdditionalConsentMode: true,
+            consentOnContinuedBrowsing: false,
+            banner: {
+                position: "top",
+                acceptButtonDisplay: true,
+                customizeButtonDisplay: true,
+                closeButtonDisplay: true,
+                closeButtonRejects: true,
+                fontSizeBody: "14px",
+            },
+        }
+    </script>
+    <script async src="https://cdn.iubenda.com/cs/iubenda_cs.js"></script>
+
 </head>  
 <body>
     <header class="header clearfix">
@@ -20,10 +58,8 @@
         </a>
         <ul class="header__menu animate">
             <li class="header__menu__item"><a href="index.html">Home</a></li>
-            <li class="header__menu__item"><a href="single.html">Single</a></li>
-            <li class="header__menu__item"><a href="page.html">Page</a></li>
-            <li class="header__menu__item"><a href="">Item</a></li>
-            <li class="header__menu__item"><a href="">Item</a></li>
+            <li class="header__menu__item"><a href="single.html">Project</a></li>
+            <li class="header__menu__item"><a href="page.html">About Us</a></li>
         </ul>
     </header>
 
@@ -40,24 +76,24 @@
 
     <section class="cards clearfix">
         <div class="card">
-            <img class="card__image" src="https://source.unsplash.com/400x260/?nature" alt="Nature">
+            <img class="card__image" src="https://source.unsplash.com/400x260/?food" alt="Food">
             <div class="card__copy">
-                <h3>Cos'è</h3>
-                <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.</p>
+                <h3>Cos'è?</h3>
+                <p>Schimichino è un sito web ce ti aiuta a scegliere luoghi dove andare, posti in cui schimicare e non solo, ti permette di inserire i tuoi posti preferiti per farli conoscere alla persone e condividere le esperienze con tutti! </p>
+            </div> 
+        </div>
+        <div class="card">
+            <img class="card__image" src="https://source.unsplash.com/400x260/?food" alt="Food">
+            <div class="card__copy">
+                <h3>Quando nasce?</h3>
+                <p>Nasce in una sera fra amici, quando, dopo aver consumato la fonte di piacere, siamo arrivati alla conclusione che non vi era nessun posto aperto in cui schimicare, e anche se google maps ne segnava due aperti, quest'ultimi erano chuisi...</p>
             </div>
         </div>
         <div class="card">
             <img class="card__image" src="https://source.unsplash.com/400x260/?food" alt="Food">
             <div class="card__copy">
-                <h3>Quando nasce</h3>
-                <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card__image" src="https://source.unsplash.com/400x260/?people" alt="People">
-            <div class="card__copy">
-                <h3>A  cosa serve</h3>
-                <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.</p>
+                <h3>A cosa serve?</h3>
+                <p>Serve per cercar posti in cui mangiare, recensiti da utenti che sono iscritti al sito, luoghi con viste mozzafiato vicini a noi e magari chissà, in futuro potrebbe essere ampliata anche ad altro, magari alle migliori genetiche, chissà...</p>
             </div>
         </div>
     </section>
@@ -109,7 +145,8 @@
     </section>
 
     <footer class="footer">
-        <p>Copiright - 2022 scotti.17115@gmail.com</p>
+        <p>Copiright - 2022 scotti.17115@gmail.com <a href="https://www.iubenda.com/privacy-policy/91214297" rel="noreferrer nofollow" target="_blank">Privacy Policy</a>
+        - <a href="#" role="button" class="iubenda-advertising-preferences-link">Personalizza tracciamento pubblicitario</a></p>
 
     </footer>
 
@@ -123,6 +160,15 @@
                 e.preventDefault();
             });
         });
+
+        //funzioe per generare pubblicità
+
+        !function(d,l,e,s,c){e=d.createElement("script");
+            e.src="//ad.altervista.org/js.ad/size=300X250/?ref="+encodeURIComponent(l.hostname+l.pathname)+"&r="+Date.now();
+            s=d.scripts;
+            c=d.currentScript||s[s.length-1];
+            c.parentNode.insertBefore(e,c)}
+            (document,location)
     </script>
 </body>
 </html>
